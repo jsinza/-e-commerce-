@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  background-color: $yellow;
+  &__container {
+    display: flex;
+    width: 76%;
+    height: 40px;
+    align-items: stretch;
+  }
+  &__search {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 15px;
+    border-top-left-radius: $sm-border;
+    border-bottom-left-radius: $sm-border;
+  }
+  &__icon {
+    display: flex;
+    &--logo {
+      justify-content: center;
+      img {
+        margin-right: 25px;
+        cursor: pointer;
+      }
+    }
+    &--search {
+      border: 1px solid $base;
+      background-color: $base;
+      width: 40px;
+      border-bottom-right-radius: $sm-border;
+      border-top-right-radius: $sm-border;
+      cursor: pointer;
+      img {
+        width: 18px;
+        height: 18px;
+        margin: auto;
+      }
+    }
+  }
+}

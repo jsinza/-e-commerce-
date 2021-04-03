@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.product {
+  display: flex;
+  background-color: $white;
+  border: 1px solid $base;
+  position: relative;
+  cursor: pointer;
+  &__image {
+    margin: 16px;
+    border-radius: 4px;
+  }
+  &__info {
+    display: flex;
+    padding-top: 1.5em;
+    flex-direction: column;
+  }
+  &__price {
+    display: flex;
+    margin-bottom: 32px;
+  }
+  &__shipping {
+    margin: auto 10px;
+    width: 20px;
+    height: 20px;
+  }
+  &__title {
+    font-size: 18px;
+  }
+
+  &__condition {
+    font-size: 12px;
+    color: $light-gray;
+    position: absolute;
+    top: 3em;
+    right: 10em;
+    @media screen and (max-width: 800px) {
+      top: 2.5em;
+      right: 1.5em;
+    }
+  }
+}
