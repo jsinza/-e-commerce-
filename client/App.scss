@@ -1,0 +1,13 @@
+@import './styles/variables';
+
+body {
+	margin: 0;
+	background-color: $base;
+	font-family: Helvetica, sans-serif;
+}
+.container {
+	margin: 0 9% 4% 9%;
+	@media screen and (max-width: 800px) {
+		margin: 0 10px 10px 10px;
+	}
+}

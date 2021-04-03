@@ -1,0 +1,63 @@
+{
+  "name": "e-commerce-meli",
+  "version": "1.0.0",
+  "description": "Admission Test meli",
+  "main": "./src/client/index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\"",
+    "test": "jest",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "keywords": [],
+  "author": "Jhon Quiceno",
+  "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "axios": "^0.20.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "css-loader": "^4.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "express": "^4.17.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.14.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "sematext-agent-express": "^2.1.3",
+    "style-loader": "^1.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy"
+    },
+    "verbose": true,
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  }
+}
