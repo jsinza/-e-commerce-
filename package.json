@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "ENV=development nodemon --inspect server.js",
-    "start": "node server.js",
+    "start": "env=production npm-run-all build server",
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "server": "node server.js",
     "build": "webpack-cli --config webpack.config.js",
     "lint": "eslint src/ --ext .js --ext .jsx --fix"
   },
@@ -16,9 +18,9 @@
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "dotenv": "^8.2.0",
     "concurrently": "^5.3.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "identity-obj-proxy": "^3.0.0",
@@ -26,8 +28,8 @@
     "query-string": "^6.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-router": "^5.1.2",
     "react-redux": "^7.2.3",
+    "react-router": "^5.1.2",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
@@ -53,6 +55,7 @@
     "mini-css-extract-plugin": "^0.7.0",
     "nodemon": "^2.0.7",
     "sass": "^1.32.8",
+    "npm-run-all": "^4.1.5",
     "sass-loader": "^10.1.1",
     "sematext-agent-express": "^2.1.3",
     "style-loader": "^1.3.0",

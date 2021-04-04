@@ -37,11 +37,11 @@ describe('Context', () => {
     wrapper = mount(<StoreProvider><Demo /></StoreProvider>);
   });
 
-  it('', () => {
+  it('should get status from provider', () => {
     expect(wrapper.find("[className='demo']").text()).toBe(ITEM.title);
   });
 
-  it('', async () => {
+  it('should call the actions FETCH_ITEM_DETAIL_START and FETCH_ITEM_DETAIL_SUCCESS', async () => {
     const dispatchMock = jest.fn();
     itemService.getItem.mockResolvedValue({ data: ITEM });
     const id = 'MLA680573238';
@@ -50,7 +50,7 @@ describe('Context', () => {
     expect(dispatchMock.mock.calls[1][0]).toMatchObject(fetchItemDetailSuccess(ITEM));
   });
 
-  it('', async () => {
+  it('should call the actions FETCH_ITEMS_START and FETCH_ITEMS_SUCCESS', async () => {
     const dispatchMock = jest.fn();
     itemService.searchItems.mockResolvedValue({ data: ITEM });
     const query = 'zapatos';

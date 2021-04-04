@@ -1,29 +1,17 @@
-# Prueba tecnica Front End Developer Mercadolibre
+# Ecommerce Meli
+This is a webapps that allows you to search for free market products and see product details.
 
-## Introducción
-
-test práctico para aspirantes al área de front-end de Mercado Libre.
-La aplicación consta de tres componentes principales: la caja de búsqueda, la visualización de resultados, y la
-descripción del detalle del producto.
-
-Para ejecutar el proyecto
-
+You'll first need to install dependences:
 ### `npm install`
 
-instala las dependencias de node
-
+to run the application in development mode http://localhost:8080
 ### `npm run dev`
 
-ejecuta el api y la aplicación cliente en modo desarrollo
-
-### `npm run server`
-
-ejecuta el api local https://localhost:5000
-
+to run the application in production  mode http://localhost:8080
 ### `npm run start`
 
-ejecuta la aplicación cliente en modo desarrollo https://localhost:8080
-
+Run the unit tests
 ### `npm run test`
+Run the unit tests and watch coverage
 
-ejecuta las pruebas unitarias de la solución
+### `npm run test:coverage`
