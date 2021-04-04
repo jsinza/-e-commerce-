@@ -1,0 +1,18 @@
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-not-found {
+  background-color: #fff;
+  &__container {
+    align-items: center;
+    padding: 42px 40px 32px;
+    text-align: center;
+  }
+  &__info {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.35;
+  }
+}
